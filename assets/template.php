@@ -59,41 +59,39 @@
 
 			<table style="">
 				<tr>
-					<th>Length:</th>
+					<th><label for="length">Length:</label></th>
 					<td>
-						<label><input type="number" name="length" value="<?=htmlspecialchars($length)?>"></label>
+						<input type="number" name="length" id="length" step="1" min="1" max="32" value="<?=(int)trim($length)?>">
 					</td>
 				</tr>
 				<tr>
-					<th>Numbers 2-9:</th>
+					<th><label for="numbers">Numbers 2-9:</label></th>
 					<td>
-						<label><input type="checkbox" name="numbers" <?if($numbers):?>checked="checked"<?endif;?>></label>
+						<input type="checkbox" name="numbers" id="numbers" <? if ($numbers) { ?>checked="checked"<? } ?>>
 					</td>
 				</tr>
 				<tr>
-					<th>Chars A-Z:</th>
+					<th><label for="upperchars">Chars A-Z:</label></th>
 					<td>
-						<label><input type="checkbox" name="upperchars" <?if($upperchars):?>checked="checked"<?endif;?>></label>
+						<input type="checkbox" name="upperchars" id="upperchars" <? if ($upperchars) { ?>checked="checked"<? } ?>>
 					</td>
 				</tr>
 				<tr>
-					<th>Chars a-z:</th>
+					<th><label for="lowerchars">Chars a-z:</label></th>
 					<td>
-						<label><input type="checkbox" name="lowerchars" <?if($lowerchars):?>checked="checked"<?endif;?>></label>
+						<input type="checkbox" name="lowerchars" id="lowerchars" <? if ($lowerchars) { ?>checked="checked"<? } ?>>
 					</td>
 				</tr>
 				<tr>
-					<th>Special chars (%@!., etc.):</th>
+					<th><label for="specialchars">Special chars (%@!., etc.):</label></th>
 					<td>
-						<label>
-							<input type="checkbox" name="specialchars" <?if($specialchars):?>checked="checked"<?endif;?>>
-						</label>
+						<input type="checkbox" name="specialchars" id="specialchars" <? if ($specialchars) { ?>checked="checked"<? } ?>>
 					</td>
 				</tr>
 			</table>
 
 			<input type="hidden" name="u" value="<?=mt_rand()?>">
-			<button type="submit">Generate new password!</button>
+			<button type="submit" class="btn btn-lg btn-primary">Generate new password!</button>
 
 		</div>
 
