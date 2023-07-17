@@ -4,3 +4,11 @@ const copytoclipboard = () => {
 	$("#copy,#ok").toggle();
 };
 
+"use strict";
+
+$(function(){
+
+
+
+
+});

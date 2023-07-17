@@ -18,12 +18,7 @@
 	<meta http-equiv="cache-control" content="no-store, no-cache, max-age=0, must-revalidate">
 
 
-	<script
-		src="https://code.jquery.com/jquery-2.2.4.min.js"
-		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-		crossorigin="anonymous"></script>
-
-
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
 
