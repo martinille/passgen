@@ -34,7 +34,7 @@
 	<script src="clipboard.min.js"></script>
 
 
-	<title>Password Generator Online</title>
+	<title>Simple Password Generator</title>
 </head>
 <body>
 
