@@ -35,7 +35,7 @@
 	<div>
 
 
-		<h1><a href="<?=URL_ROOT?>">Password Generator</a></h1>
+		<h1><a href="<?=URL_ROOT?>">Simple Password Generator</a></h1>
 
 
 
@@ -57,36 +57,26 @@
 
 		<div id="t">
 
-			<table style="">
+			<table>
 				<tr>
 					<th><label for="length">Length:</label></th>
-					<td>
-						<input type="number" name="length" id="length" step="1" min="1" max="32" value="<?=(int)trim($length)?>">
-					</td>
+					<td><input type="number" name="length" id="length" step="1" min="1" max="32" value="<?=(int)trim($length)?>"></td>
 				</tr>
 				<tr>
 					<th><label for="numbers">Numbers 2-9:</label></th>
-					<td>
-						<input type="checkbox" name="numbers" id="numbers" <? if ($numbers) { ?>checked="checked"<? } ?>>
-					</td>
+					<td><input type="checkbox" name="numbers" id="numbers" <? if ($numbers) { ?>checked="checked"<? } ?>></td>
 				</tr>
 				<tr>
 					<th><label for="upperchars">Chars A-Z:</label></th>
-					<td>
-						<input type="checkbox" name="upperchars" id="upperchars" <? if ($upperchars) { ?>checked="checked"<? } ?>>
-					</td>
+					<td><input type="checkbox" name="upperchars" id="upperchars" <? if ($upperchars) { ?>checked="checked"<? } ?>></td>
 				</tr>
 				<tr>
 					<th><label for="lowerchars">Chars a-z:</label></th>
-					<td>
-						<input type="checkbox" name="lowerchars" id="lowerchars" <? if ($lowerchars) { ?>checked="checked"<? } ?>>
-					</td>
+					<td><input type="checkbox" name="lowerchars" id="lowerchars" <? if ($lowerchars) { ?>checked="checked"<? } ?>></td>
 				</tr>
 				<tr>
 					<th><label for="specialchars">Special chars (%@!., etc.):</label></th>
-					<td>
-						<input type="checkbox" name="specialchars" id="specialchars" <? if ($specialchars) { ?>checked="checked"<? } ?>>
-					</td>
+					<td><input type="checkbox" name="specialchars" id="specialchars" <? if ($specialchars) { ?>checked="checked"<? } ?>></td>
 				</tr>
 			</table>
 
