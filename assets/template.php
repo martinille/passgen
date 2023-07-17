@@ -11,7 +11,7 @@
 	</script>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="author" content="Martin Ille; http://www.brown.sk">
+	<meta name="author" content="Martin Ille; https://www.brown.sk">
 	<meta name="description" content="Simple online random password generator.">
 	<meta name="keywords" content="password generator, pwd, generator, pass gen, generate password">
 	<meta name="robots" content="index,follow,all">
@@ -21,12 +21,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+	<script src="<?=URL_ASSETS?>clipboard.js/clipboard.min.js"></script>
 
-	<link href="style.css?<?=filemtime('style.css')?>" type="text/css" rel="stylesheet">
-
-
-
-	<script src="clipboard.min.js"></script>
+	<link href="<?=URL_CUSTOM_CSS?>general.min.css?_<?=filemtime(DIR_CUSTOM_CSS . 'general.min.css')?>" type="text/css" rel="stylesheet">
+	<script src="<?=URL_CUSTOM_JS?>general.min.js?_<?=filemtime(DIR_CUSTOM_JS . 'general.min.js')?>"></script>
 
 
 	<title>Simple Password Generator</title>
@@ -95,7 +93,7 @@
 			</table>
 
 			<input type="hidden" name="u" value="<?=mt_rand()?>">
-			<button type="submit" style="padding: 10px 15px; cursor: pointer;">Generate new password!</button>
+			<button type="submit">Generate new password!</button>
 
 		</div>
 
