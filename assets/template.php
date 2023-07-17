@@ -11,19 +11,19 @@
 	</script>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="cache-control" content="no-store, no-cache, max-age=0, must-revalidate">
 	<meta name="author" content="Martin Ille; https://www.brown.sk">
 	<meta name="description" content="Simple online random password generator.">
 	<meta name="keywords" content="password generator, pwd, generator, pass gen, generate password">
 	<meta name="robots" content="index,follow,all">
-	<meta http-equiv="cache-control" content="no-store, no-cache, max-age=0, must-revalidate">
-
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
 	<script src="<?=URL_ASSETS?>clipboard.js/clipboard.min.js"></script>
 
-	<link href="<?=URL_CUSTOM_CSS?>general.min.css?_<?=filemtime(DIR_CUSTOM_CSS . 'general.min.css')?>" type="text/css" rel="stylesheet">
+	<link href="<?=URL_CUSTOM_CSS?>general.min.css?_<?=filemtime(DIR_CUSTOM_CSS . 'general.min.css')?>" rel="stylesheet">
 	<script src="<?=URL_CUSTOM_JS?>general.min.js?_<?=filemtime(DIR_CUSTOM_JS . 'general.min.js')?>"></script>
 
 
