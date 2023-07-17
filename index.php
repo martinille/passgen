@@ -2,7 +2,13 @@
 
 define("DIR_ROOT", realpath(dirname(__FILE__)) . '/');
 const DIR_ASSETS = DIR_ROOT . 'assets/';
+const DIR_CUSTOM_CSS = DIR_ASSETS . 'custom_css/';
+const DIR_CUSTOM_JS = DIR_ASSETS . 'custom_js/';
 
+define('URL_ROOT', ($_SERVER['REQUEST_SCHEME'] ?? 'http') . '://' . $_SERVER['HTTP_HOST'] . '/' . ltrim(pathinfo($_SERVER['PHP_SELF'], PATHINFO_DIRNAME), '/') . '/');
+const URL_ASSETS = URL_ROOT . 'assets/';
+const URL_CUSTOM_CSS = URL_ASSETS . 'custom_css/';
+const URL_CUSTOM_JS = URL_ASSETS . 'custom_js/';
 
 
 
