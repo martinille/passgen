@@ -57,20 +57,6 @@ else {
 }
 
 
-/*
-function generateNewPassword($long,$numbers,$upperchars,$lowerchars,$specialchars) {
-	$chars = $newPwd = '';
-	if ($numbers) $chars .= "23456789";
-	if ($upperchars) $chars .= "QWERTUPASDFGHJKCVBNM";
-	if ($lowerchars) $chars .= "qwertuipasdfghjkxcvbnm";
-	if ($specialchars) $chars .= ';@#$%^&*(){}"?:></-+,.';
-
-	for (;strlen($newPwd)<$long;) {
-		$newPwd .= $chars{mt_rand(0,strlen($chars)-1)};
-	}
-	return $newPwd;
-}
-*/
 
 /**
  * @param int $long
