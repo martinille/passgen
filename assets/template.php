@@ -37,7 +37,7 @@
 	<div>
 
 
-		<h1><a href="./">Password Generator</a></h1>
+		<h1><a href="<?=URL_ROOT?>">Password Generator</a></h1>
 
 
 
@@ -45,7 +45,9 @@
 			<input
 				id="password"
 				onclick="this.focus();this.select();"
-				value="<?=htmlspecialchars($password)?>">
+				value="<?=htmlspecialchars($password)?>"
+				readonly
+			>
 			<button type="button" onclick="copytoclipboard();" id="copy" class="btn btn-default"><span class="glyphicon glyphicon-copy"></span>&nbsp;copy</button>
 			<span id="ok" class="label label-default"><span class="glyphicon glyphicon-ok"></span></span>
 			<div class="clearfix"></div>
