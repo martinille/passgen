@@ -45,8 +45,8 @@
 			<input
 				id="password"
 				onclick="this.focus();this.select();"
-				value="<?=htmlspecialchars(generateNewPassword($length, $numbers, $upperchars, $lowerchars, $specialchars))?>">
-			<button type="button" onclick="copytoclipboard();" id="copy" class="btn btn-default"><span class="glyphicon glyphicon-copy"></span> copy</button>
+				value="<?=htmlspecialchars($password)?>">
+			<button type="button" onclick="copytoclipboard();" id="copy" class="btn btn-default"><span class="glyphicon glyphicon-copy"></span>&nbsp;copy</button>
 			<span id="ok" class="label label-default"><span class="glyphicon glyphicon-ok"></span></span>
 			<div class="clearfix"></div>
 		</div>

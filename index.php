@@ -100,7 +100,7 @@ function generateNewPassword(int $long, bool $numbers, bool $upperchars, bool $l
 	return $newPwd;
 }
 
-
+$password = generateNewPassword($length, $numbers, $upperchars, $lowerchars, $specialchars);
 
 require_once DIR_ASSETS . 'template.php';
 
