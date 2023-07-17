@@ -91,7 +91,9 @@
 
 
 
-
+<footer>
+	<a href="https://github.com/martinille/passgen" target="_blank">Source code of this website on Github</a>
+</footer>
 
 
 </body>

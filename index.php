@@ -1,60 +1,29 @@
 <?php
 
 define("DIR_ROOT", realpath(dirname(__FILE__)) . '/');
-const DIR_ASSETS = DIR_ROOT . 'assets/';
+const DIR_ASSETS     = DIR_ROOT . 'assets/';
 const DIR_CUSTOM_CSS = DIR_ASSETS . 'custom_css/';
-const DIR_CUSTOM_JS = DIR_ASSETS . 'custom_js/';
+const DIR_CUSTOM_JS  = DIR_ASSETS . 'custom_js/';
 
-define('URL_ROOT', ($_SERVER['REQUEST_SCHEME'] ?? 'http') . '://' . $_SERVER['HTTP_HOST'] . '/' . ltrim(pathinfo($_SERVER['PHP_SELF'], PATHINFO_DIRNAME), '/') . '/');
-const URL_ASSETS = URL_ROOT . 'assets/';
+define('URL_ROOT', rtrim(($_SERVER['REQUEST_SCHEME'] ?? 'http') . '://' . $_SERVER['HTTP_HOST'] . '/' . ltrim(pathinfo($_SERVER['PHP_SELF'], PATHINFO_DIRNAME), '/'),'/') . '/');
+const URL_ASSETS     = URL_ROOT . 'assets/';
 const URL_CUSTOM_CSS = URL_ASSETS . 'custom_css/';
-const URL_CUSTOM_JS = URL_ASSETS . 'custom_js/';
-
-
+const URL_CUSTOM_JS  = URL_ASSETS . 'custom_js/';
 
 // length
-if ( !empty($_REQUEST['length']) && preg_match('/^[0-9]+$/',$_REQUEST['length']) ) {
-	$length = $_REQUEST['length'];
-}
-else {
-	$length = 10;
-}
+$length = !empty($_REQUEST['length']) && preg_match('/^[0-9]+$/', $_REQUEST['length']) ? $_REQUEST['length'] : 10;
 
 // numbers
-if ( !empty($_REQUEST['u']) and empty($_REQUEST['numbers']) ) {
-	$numbers = false;
-}
-else {
-	$numbers = true;
-}
-
+$numbers = !(!empty($_REQUEST['u']) && empty($_REQUEST['numbers']));
 
 // upperchars
-if ( !empty($_REQUEST['u']) and empty($_REQUEST['upperchars']) ) {
-	$upperchars = false;
-}
-else {
-	$upperchars = true;
-}
-
+$upperchars = !(!empty($_REQUEST['u']) && empty($_REQUEST['upperchars']));
 
 // lowerchars
-if ( !empty($_REQUEST['u']) and empty($_REQUEST['lowerchars']) ) {
-	$lowerchars = false;
-}
-else {
-	$lowerchars = true;
-}
-
-
+$lowerchars = !(!empty($_REQUEST['u']) && empty($_REQUEST['lowerchars']));
 
 // specialchars
-if ( !empty($_REQUEST['specialchars']) ) {
-	$specialchars = true;
-}
-else {
-	$specialchars = false;
-}
+$specialchars = !empty($_REQUEST['specialchars']);
 
 
 
